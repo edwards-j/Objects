@@ -39,7 +39,7 @@ function changeStatements(taxes, jobs, infrastructure, healthCare, crimeAndEnfor
     }
     return platformStatements;
 };
-console.log("The new statements are", changeStatements("more taxes plz", "I hate jobs", "Destroy all the roads", "get rid of healthcare", "Let 'em walk"));
+console.log("The new statements are", changeStatements("More taxes plz", "I hate jobs", "Destroy all the roads", "Get rid of healthcare", "Let all the criminals free"));
 
 //Changes donation form URL
 function changeDonationURL(newURL) {
@@ -86,7 +86,7 @@ function newImages(pic1, pic2, pic3) {
     }
     return images;
 }
-console.log(newImages("Visiting pawnee, IN", "Eating at JJ's Diner", "Hating on Eagleton"))
+console.log(newImages("Visiting Pawnee, IN", "Eating at JJ's Diner", "Hating on Eagleton"))
 
 //Changes mission statement
 newMissionStatement = (newWords) => {
@@ -104,9 +104,9 @@ newRegisterURL = (newURL) => {
 console.log(newRegisterURL("signmeup.com"));
 
 
-/******************
+/****************
 PUT INFO ON PAGE
-******************/
+****************/
 
 let newArticle = document.createElement("ARTICLE"); //creates the new article element
 
@@ -114,12 +114,8 @@ newArticle.setAttribute("id", district); //sets the ID of the article to the val
 
 document.body.appendChild(newArticle); //Appends the article to the body of the HTML
 
-
-
 for (let property in platformStatements) {
     let content = ""; //sets an empty string as a variable
     content = platformStatements[property]; //changes the value of the empty string to the value of the key in platformStatements
-    newArticle.innerHTML += content + ". "; //
+    newArticle.innerHTML += content + ". "; //Changes the innerTHML of the article to the value of the key.
 }
-
-
