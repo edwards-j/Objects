@@ -101,5 +101,25 @@ newRegisterURL = (newURL) => {
     registerURL = newURL
     return registerURL;
 }
-
 console.log(newRegisterURL("signmeup.com"));
+
+
+/******************
+PUT INFO ON PAGE
+******************/
+
+let newArticle = document.createElement("ARTICLE"); //creates the new article element
+
+newArticle.setAttribute("id", district); //sets the ID of the article to the value of the district variable
+
+document.body.appendChild(newArticle); //Appends the article to the body of the HTML
+
+
+
+for (let property in platformStatements) {
+    let content = ""; //sets an empty string as a variable
+    content = platformStatements[property]; //changes the value of the empty string to the value of the key in platformStatements
+    newArticle.innerHTML += content + ". "; //
+}
+
+
